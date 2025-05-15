@@ -9,6 +9,11 @@ export const navbarLinks = [
         icon: Home,
         path: "/",
       },
+      {
+        label: "Task",
+        icon: Home,
+        path: "/task",
+      },
     ],
   },
 ];

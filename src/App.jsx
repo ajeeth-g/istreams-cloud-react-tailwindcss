@@ -1,6 +1,7 @@
 import { ThemeProvider } from "@/components/theme-provider";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import DashboardPage from "./pages/DashboardPage";
+import TaskView from "./pages/TaskView";
 import ForgetPasswordPage from "./pages/ForgetPasswordPage";
 import LoginFormPage from "./pages/LoginFormPage";
 import NotFoundPage from "./pages/NotFoundPage";
@@ -30,6 +31,7 @@ const App = () => {
           element: <Layout />,
           children: [
             { index: true, element: <DashboardPage /> },
+            { path: "/task", element: <TaskView /> },
           ]
         }
       ],
